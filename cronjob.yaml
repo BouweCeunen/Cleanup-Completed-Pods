@@ -12,8 +12,6 @@ spec:
       template:
         spec:
           serviceAccountName: cleanup-completed-pods
-          imagePullSecrets:
-          - name: regcred
           containers:
           - name: cleanup-completed-pods
             image: bouwe/cleanup-completed-pods:0.0.1
