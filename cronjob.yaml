@@ -16,7 +16,7 @@ spec:
           - name: regcred
           containers:
           - name: cleanup-completed-pods
-            image: docker-registry.k8s.bouweceunen.com/kubernetes/cleanup-completed-pods:0.0.1
+            image: bouwe/cleanup-completed-pods:0.0.1
             env:
             - name: NAMESPACE
               value: argo
