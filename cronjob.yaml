@@ -2,8 +2,8 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   labels:
-    app: cleanup-completed-pods-cronjob
-  name: cleanup-completed-pods-cronjob
+    app: cleanup-completed-pods
+  name: cleanup-completed-pods
   namespace: argo
 spec:
   schedule: "0 * * * *"
