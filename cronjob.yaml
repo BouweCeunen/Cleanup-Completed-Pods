@@ -14,7 +14,7 @@ spec:
           serviceAccountName: cleanup-completed-pods
           containers:
           - name: cleanup-completed-pods
-            image: bouwe/cleanup-completed-pods:0.0.1
+            image: bouwe/cleanup-completed-pods:0.0.2
             env:
             - name: NAMESPACE
               value: argo
@@ -26,6 +26,3 @@ spec:
                 cpu: 10m
                 memory: 10Mi
           restartPolicy: OnFailure
-
-
-
