@@ -6,7 +6,7 @@ metadata:
   name: cleanup-completed-pods
   namespace: argo
 spec:
-  schedule: "0 * * * *"
+  schedule: "0 0 * * 1"
   jobTemplate:
     spec:
       template:
