@@ -8,8 +8,14 @@ metadata:
 spec:
   schedule: "0 0 * * 1"
   jobTemplate:
-    spec:
+     metadata:
+       labels:
+         app: cleanup-completed-pods
+     spec:
       template:
+        metadata:
+          labels:
+            app: cleanup-completed-pods
         spec:
           serviceAccountName: cleanup-completed-pods
           containers:
